@@ -1,0 +1,1 @@
+const lat1=26.900965;const long1=75.8283;export {lat1,long1};
