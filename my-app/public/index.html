@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="Mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 601px)" href="Desktop.css">
+    <meta name="theme-color" content="#000000" />
+    <!--meta name="description" content="Web site created using create-react-app"/-->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/../favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Track Me Ride by Archit Bubber</title>
+
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/amyy5ubei54jvppnaiu67sdsudrcntdw/map_load?v=1.5"></script>
+    <style>
+    @font-face {
+      font-family: Drag62;
+      src: url(./62Drag.otf);
+    }
+    @font-face {
+      font-family: Retro;
+      src: url(./Retro.otf);
+    }
+    @font-face {
+      font-family: Blazed;
+      src: url(./Blazed.ttf);
+    }
+   html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+
+  height: 100%;
+  width: auto;
+  overflow:hidden;
+}
+  </style>
+  </head>
+  <body style="background-color: rgba(255, 255, 255, 0.09);background-image: url('./Images/Track.jpg')">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div>
+      <h1 class ="title" style = "text-shadow: 2px 2px wheat; font-family:Drag62;color:rgba(240, 222, 63, 0.884);" >&nbsp;(Track--My--Ride)</h1>
+      <h6 class ="byline" style=" font-color:rgb(245, 239, 239);" >BY ARCHIT BUBBER</h6>
+    </div>
+    <div id="root" ></div>
+    <div class="Dashboard" style="background-color:grey; z-index: 1;background-image: url('./Images/wooden.jpg')">
+    
+    <div class="wrapper">
+      <div class="speedometer">
+        <img id="rpm-img" style="border-radius: 50%;"src ='./Images/rpm.jpeg'>
+        <div class="needle"></div>
+      </div>
+    </div>
+
+    <!--Speedometer-->
+<div class="wrapper1" >
+      <div class="speedometer">
+        <img id="speed-img" style="border-radius: 50%;"src ='./Images/speedo.png'>
+        <div class="needle1"></div>
+      </div>
+    </div>
+    
+    <!--Temperature-->
+<div class="wrapper2" >
+  <div class="tempmeter">
+    <img id="temp-img"  style="border-radius: 50%;"src ='./Images/temp.jpeg'>
+    <div class="needle2"></div>
+  </div>
+</div>
+ </div>
+ <div id="noname" />
+  </body>
+</html>
+

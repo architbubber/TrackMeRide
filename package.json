@@ -1,0 +1,26 @@
+{
+  "name": "nore",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx concurrently --kill-others-on-fail \"cd ./my-app && yarn start\" \"node server/index.js\"",
+    "server": "nodemon server/index.js",
+    "dev": "npx concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
+    "heroku-postbuild": "npm install --prefix my-app && npm run build --prefix my-app",
+    "build2": "npm i mapmyindia-sdk-nodejs -S",
+    "client-install": "npm install --prefix my-app",
+    "build": "concurrently \"cd my-app && npm run build\" \"npm build \"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd ./my-app && npm start ",
+    "server-prod": "node server/index.js",
+    "start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" "
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
